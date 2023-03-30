@@ -41,6 +41,7 @@ img {
 .menu-nav ul {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
 }
 
@@ -62,6 +63,18 @@ img {
 
 .menu-nav li a:hover::after {
   width: 100%;
+}
+
+@media (max-width: 700px) {
+  .menu-nav li a {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .menu {
+    justify-content: center;
+  }
 }
 
 /* Opções */
@@ -129,6 +142,8 @@ img {
   text-align: center;
   color: #222;
   margin-bottom: 30px;
+  padding-right: 5px;
+  padding-left: 5px;
 }
 
 .botao {
@@ -151,6 +166,28 @@ img {
 
 .botao a:hover {
   background-color: #efefef;
+}
+
+@media (max-width: 1200px) {
+  .opcoes-decidir {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 700px) {
+  .opcoes-texto h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+
+  .opcoes-texto p,
+  .opcoes-tipo p {
+    font-size: 1.2rem;
+  }
+
+  .opcoes-texto p:last-child {
+    margin-bottom: 30px;
+  }
 }
 
 /* Contato */
@@ -235,6 +272,7 @@ img {
   border-radius: 4px;
   padding: 8px;
   margin-bottom: 18px;
+  outline-color: #daa520;
 }
 
 .contato-form button {
@@ -249,6 +287,12 @@ img {
 
 .contato-form button:hover {
   background-color: #ddd;
+}
+
+@media (max-width: 700px) {
+  .contato-redes iframe {
+    display: none;
+  }
 }
 
 /* Footer */
